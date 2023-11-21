@@ -1,45 +1,72 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="クイズ！！Let's インテグラル"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「クイズ！！Let's インテグラル」[l][r]
 
-メロスは激怒した。[l][r]
+第1門[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+[bg storage=FA341E94-9995-4D56-8E33-529880508E8D.jpeg time=500][l][r]
 
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_correct1] →x^3+x^2+C [endlink][r]
+[link target=*tag_incorrect] →3x^3+2x^2+C [endlink][r]
 [s]
 
-*tag_sleep
+*tag_incorrect
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
-
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+高校生の時、何してたの？[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_correct1
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+正解！！[r]
+
+【 NEXT 】[l][cm]
+
+[jump target=*N2]
+
+*N2
+
+第2門[l][r]
+
+[bg storage=8D4D2831-5648-48CC-96BD-581C04D3385E.jpeg time=500][l][r]
+
+[link target=*tag_correct2] →π/4 [endlink][r]
+[link target=*tag_incorrect] →π/2 [endlink][r]
+[s]
+
+*tag_correct2
+
+[cm]
+これでMARCHに合格だ！！[r]
+
+【 LAST 】[l][cm]
+
+[jump target=*N3]
+
+*N3
+
+第3門[l][r]
+
+[bg storage=D0768274-3AC3-43AE-9CDB-31AB32DED65F.jpeg time=500][l][r]
+
+[link target=*tag_incorrect] →2 - 2√2 + log(2 + √2) [endlink][r]
+[link target=*tag_correct3] →4√2 - 4 + log(1 + √2) [endlink][r]
+[s]
+
+*tag_correct3
+
+[cm]
+おめでとう！！これできみも慶應入学だ[r]
 
 【 GOOD END 】[l][cm]
 
